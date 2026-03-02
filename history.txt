@@ -1,0 +1,56 @@
+  1  sudo apt update && sudo apt install -y dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python3 libssl-dev wget
+    2  wget https://root.cern/download/root_v6.30.04.Linux-ubuntu22-x86_64-gcc11.4.tar.gz
+    3  cd ~
+    4  wget https://root.cern/download/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4.tar.gz
+    5  tar -zxvf root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4.tar.gz
+    6  source ~/root/bin/thisroot.sh
+    7  root
+    8  nano my_plot.C
+    9  root my_plot.C
+   10  sudo apt update && sudo apt install -y libtiff5 libxpm4 libxext6 libxft2 libx11-6 libgl1 libegl1
+   11  sudo apt install -y libxpm4 libxext6 libxft2 libx11-6 libgl1 libegl1 libtiff6
+   12  sudo ln -s /usr/lib/x86_64-linux-gnu/libtiff.so.6 /usr/lib/x86_64-linux-gnu/libtiff.so.5
+   13  root my_plot.C
+   14  root
+   15  cd
+   16  echo "source ~/root/bin/thisroot.sh" >> ~/.bashrc
+   17  source ~/.bashrc
+   18  root
+   19  cd
+   20  sudo apt install -y libgsl-dev
+   21  root
+   22  su -
+   23  cd
+   24  root
+   25  cd
+   26  mkdir root_intro
+   27  cd root_intro/
+   28  pwd
+   29  cd ..
+   30  ls
+   31  cd root_intro/
+   32  git clone git@github.com:kateriinna/root_training.git
+   33  ssh-keygen -t ed25519 -C "katerinasobatkevic@gmail.com"
+   34  cat ~/.ssh/id_ed25519.pub
+   35  ls -al ~/.ssh
+   36  cat /home/eula/.ssh/id_ed25519
+   37  ssh-keygen -t ed25519 -C "katerinasobatkevic@gmail.com"
+   38  cat ~/.ssh/id_ed25519.pub
+   39  git clone git@github.com:kateriinna/root_training.git
+   40  ls lt
+   41  ls -lt
+   42  cd root_training
+   43  nano hello.txt
+   44  ls -lt
+   45  cat hello.txt
+   46  gid status
+   47  git status
+   48  git add hello.txt
+   49  git status
+   50  git commit -m "2 марта и даня начал учить нас гиту. ура"
+   51  git status
+   52  git commit -m "2 марта и даня начал учить нас гиту. ура"
+   53  git status
+   54  git push
+   55  git history
+   56  history
