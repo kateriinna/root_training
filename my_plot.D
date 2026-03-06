@@ -8,9 +8,9 @@
 void my_plot() {
     gStyle->SetOptStat(0);
 
-    TCanvas *c1 = new TCanvas("c1", "My First Plot", 800, 600);
+    TCanvas *c1 = new TCanvas("c1", "My Plot", 800, 600);
 
-    TH1F *h_bg   = new TH1F("h_bg", "Simulated Distributions;mRecoil GeV/c^{2};Entries", 50, 0, 2);
+    TH1F *h_bg   = new TH1F("h_bg", "Simulated Distributions;;Entries", 50, 0, 2);
     TH1F *h_sig1 = new TH1F("h_sig1", "Signal 1", 50, 0, 2);
     TH1F *h_sig2 = new TH1F("h_sig2", "Signal 2", 50, 0, 2);
 
@@ -39,7 +39,7 @@ void my_plot() {
     h_sig1->Draw("HIST SAME");
     h_sig2->Draw("HIST SAME");
 
-    TLegend *leg = new TLegend(0.55, 0.65, 0.88, 0.88); 
+    TLegend *leg = new TLegend(0.60, 0.65, 0.88, 0.88); 
     leg->AddEntry(h_sig2, "Signal 1", "f"); 
     leg->AddEntry(h_sig1, "Signal 2", "f"); 
     leg->AddEntry(h_bg,   "Signal 3", "f"); 
