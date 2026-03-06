@@ -1,8 +1,6 @@
 void my_function() {
-    // 1. Створюємо полотно
     TCanvas *c1 = new TCanvas("c1", "c1", 800, 600);
 
-    // 2. Створюємо функцію f(x) = sin(x)*x в діапазоні від 0 до 20
     TF1 *f1 = new TF1("f1", "sin(x)*x", 0, 20);
 
     double integral_val = f1->Integral(0, 10);
